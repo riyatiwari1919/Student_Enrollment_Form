@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Student Enrollment System</header>
+    <main>
+        <section class="section-1">
+            <h1 class="section1-header">Enrollment Form</h1>
+            <form class="enrollment-form">
+                <label class="input-label">Name</label>
+                <input type="text" class="input-box" id="name" placeholder="name">
+                <label class="input-label" id="ggender">Gender</label>
+                <div class="radio-box">
+                    <div class="radio"><input type="radio" name="r1" value="Male" class="radio-input">Male</div>
+                    <div class="radio"><input type="radio" name="r1" value="Female" class="radio-input">Female</div>
+                    <div class="radio"><input type="radio" name="r1" value="Others" class="radio-input">Others</div>
+                </div>
+                <label class="input-label">Photo</label>
+                <input type="file" name="yourPhoto" class="input-box" id="file">
+                <label class="input-label">Skills</label>
+                <div class="check-box">
+                    <div class="check"><input type="checkbox" class="check-input" value="C++">C++</div>
+                    <div class="check"><input type="checkbox" class="check-input" value="Java">Java</div>
+                    <div class="check"><input type="checkbox" class="check-input" value="Python">Python</div>
+                </div>
+                <label class="input-label">Email</label>
+                <input type="email" class="input-box" id="email" placeholder="email">
+                <label class="input-label">Password</label>
+                <input type="password" class="input-box" id="password" placeholder="password">
+                <!--<label class="input-label">Re-Enter Password</label>
+                <input type="password" class="input-box" placeholder="re-type password">
+                -->
+            </form>
+            <button class="enroll-btn btn">Enroll</button>
+        </section>
+        <section class="section-2">
+            <h1 class="section2-header">Enrolled Students</h1>
+            <div class="enrollment-data"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

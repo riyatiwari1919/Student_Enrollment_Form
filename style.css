@@ -1,0 +1,173 @@
+body{
+    margin: 0;
+    padding : 40px 0 0 0;
+}
+header{
+    width: 100vw;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 10px 0px;
+    color: white;
+    background-color: rgb(86, 189, 46);
+    position: fixed;
+    top : 0;
+    z-index: 9999;
+}
+main{
+    display: flex;
+    margin: 0;
+}
+.section-1{
+    background-color: white;
+    width : 50vw;
+    padding: 20px 0;
+}
+.section-2{
+    background-color: black;
+    color: white;
+    width : 50vw;
+    border-left: 5px solid rgb(86, 189, 46);
+    padding: 20px 0;
+}
+.section1-header{
+    text-align: center;
+}
+.enrollment-form{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 30px;
+    column-gap: 30px;
+    margin: 50px 20px;
+}
+.input-label{
+    justify-self: start;
+    align-self: center;
+    padding: 0 0px 0 50px;
+    font-size: 1.2rem;
+}
+.input-box{
+    justify-self: start;
+    align-self: center;
+    font-size: 1rem;
+    padding: 5px;
+}
+.radio-box,.check-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    font-size: 1.1rem;
+}
+.radio-input{
+    margin: 0 10px 0 0;
+}
+.enroll-btn{
+    width: 100px;
+    height: 40px;
+    place-self: center;
+    font-size: 1.1rem;
+    display: block;
+    margin: 60px auto 0 auto;
+    background-color: blue;
+    color: white;
+    border: 0px solid blue;
+    border-radius: 5px;
+}
+.section2-header{
+    text-align: center;
+}
+.enrollment-data{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 10px;
+    column-gap: 30px;
+    margin: 50px 20px;
+}
+.student-details-box{
+    grid-column: 1 / span 2;
+    border:1px solid wheat;
+    background-color: rgb(52, 153, 12);
+}
+.details-list{
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+.details-list li{
+    padding: 2px;
+    font-size: 1rem;
+}
+.student-pic-box{
+    padding: 5px;
+}
+.student-pic{
+    display: block;
+    margin: auto;
+    height: 120px;
+    width: 120px;
+}
+.clicked{
+    opacity: 0.6;
+    box-shadow: 0 3px 4px 0 rgb(8, 8, 8);
+}
+@media only screen and (max-width : 850px){
+    main{
+        display: block;
+    }
+    .section-1{
+        width : 100vw;
+    }
+    .section-2{
+        width : 100vw;
+        border-left: 0px solid rgb(86, 189, 46);
+        border-top: 5px solid rgb(86, 189, 46);
+    }
+    .enrollment-form{
+        grid-template-columns: 1fr 1fr;
+    }
+    .input-label{
+        justify-self: start;
+        padding: 0 0px 0 150px;
+    }
+    .input-box{
+        width: 35vw;
+    }
+    .enroll-btn{
+        margin-bottom: 50px;
+    }
+}
+@media only screen and (max-width : 505px){
+    .enrollment-form{
+            grid-template-columns: 0.5fr 1fr;
+    }
+    .input-label{
+        justify-self: start;
+        padding: 0 0px 0 30px;
+    }
+    .enrollment-data{
+         grid-template-columns: repeat(4,1fr);
+    }
+    .student-details-box{
+        grid-column: 1 / span 3;
+    }
+    .student-pic{
+        height: 100px;
+        width: 100px;
+    }
+}
+@media only screen and (max-width : 400px){
+    .enrollment-data{
+            grid-template-columns: repeat(5,1fr);
+    }
+    .student-details-box{
+        grid-column: 1 / span 4;
+    }
+    .student-pic{
+        height: 80px;
+        width: 80px;
+        margin: 15px auto;
+    }
+}
+
